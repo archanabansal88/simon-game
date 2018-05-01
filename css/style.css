@@ -1,0 +1,198 @@
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.root {
+	width: 472px;
+	height: 472px;
+	border-radius: 100%;
+	position: relative;
+	text-align: center;
+	margin: auto;
+	background-color: #333;
+	top: 10vh;
+	box-shadow: 0px 0px 12px #222;
+}
+
+.outerArea {
+	top: 10px;
+}
+
+.center {
+	width: 220px;
+	height: 220px;
+	position: absolute;
+	border-radius: 100%;
+	top: 50%;
+	left: 50%;
+	margin: -110px 0 0 -110px;
+	background-color: #ece7ee;
+	border: 12px solid #333;
+}
+
+.outer {
+	width: 228px;
+	height: 229px;
+	background-color: grey;
+	border: 12px solid #333;
+	display: inline-block;
+	margin: 3px;
+}
+
+.top-left {
+	border-top-left-radius: 100%;
+	background-color: #067506;
+}
+.top-left.light {
+	background-color: #0ce80c;
+}
+
+.top-right {
+	border-top-right-radius: 100%;
+	background-color: #af0606;
+}
+
+.top-right.light {
+	background-color: #ec1010;
+}
+
+.bottom-left {
+	border-bottom-left-radius: 100%;
+	background-color: #a7a716;
+}
+
+.bottom-left.light {
+	background-color: #ecec0a;
+}
+
+.bottom-right {
+	border-bottom-right-radius: 100%;
+	background-color: #2e2eb3;
+}
+.bottom-right.light {
+	background-color: #0a0af1;
+}
+
+.pointer {
+	cursor: pointer;
+}
+.heading {
+	margin: 30px 0 10px 0;
+	color: #222;
+	font-size: 3.2em;
+}
+.button-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.inline {
+}
+.move-count {
+	opacity: 0;
+	animation: blinking 1s linear infinite;
+}
+.count-container {
+	width: 50px;
+	height: 35px;
+	background: #32050c;
+	border-radius: 5px;
+	border: 4px solid #222;
+	color: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 3px;
+}
+
+@keyframes blinking {
+	from,
+	49.9% {
+		opacity: 0;
+	}
+	50%,
+	to {
+		opacity: 1;
+	}
+}
+
+.start {
+	background-color: red;
+}
+
+.upper-case {
+	text-transform: uppercase;
+	font-size: 10px;
+}
+.strict,
+.start {
+	width: 20px;
+	height: 20px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 100%;
+	border: 2px solid grey;
+}
+
+.strict {
+	background-color: yellow;
+}
+
+.power-button {
+	position: relative;
+	width: 40px;
+	height: 20px;
+	background: #222;
+	text-align: center;
+	border-radius: 3px;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+.input-button {
+	position: absolute;
+	display: inline-block;
+	width: 20px;
+	height: 100%;
+	background: blue;
+	left: 0;
+	margin: 0;
+	transition: all 300ms ease-in;
+	border: 2px solid #333;
+	border-radius: 4px;
+}
+
+.input-button.isChecked {
+	left: 16px;
+}
+
+.power-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	align-items: center;
+}
+
+.strict-light {
+	margin-left: 162px;
+	width: 8px;
+	height: 8px;
+	background-color: #32050c;
+	border-radius: 100%;
+	border: 2px solid #222;
+}
+
+.led-on {
+	background-color: #dc0d29;
+}
